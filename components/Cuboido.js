@@ -39,13 +39,10 @@ const Cuboido = () => {
     function addStars() {
       const starColors = [
         "#00EEEE",
-        "#00CDCD",
-        "#008B8B",
         "#0000FF",
         "#0000EE",
         "#0000CD",
         "#00008B",
-        "#00FFFF",
         "#ffffff", // white
         "#ffff00", // yellow
         "#ffcc00", // orange
@@ -72,9 +69,9 @@ const Cuboido = () => {
     }
 
     Array(2500).fill().forEach(addStars);
-    camera.position.x = -1500;
-    camera.position.y = -700;
-    camera.position.z = 1000;
+    camera.position.x = -100;
+    camera.position.y = -800;
+    camera.position.z = 1100;
 
     controls.update();
     controls.enableDamping = true;
